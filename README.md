@@ -4,7 +4,7 @@ Advent of code 2022 solutions. This year I'm trying out ocaml.
 
 ## Usage
 ```sh
-TODO
+dune exec aoc_2022 <day-number> <file1 file2 filen>
 ```
 
 ## Other years
