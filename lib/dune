@@ -1,2 +1,6 @@
 (library
- (name aoc_2022))
+ (name lib)
+ (inline_tests)
+ (libraries containers core stdio)
+ (preprocess
+  (pps ppx_inline_test)))

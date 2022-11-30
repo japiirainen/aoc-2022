@@ -5,22 +5,15 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github japiirainen/aoc_2022))
 
-(authors "Author Name")
+(authors "Joona Piirainen")
 
-(maintainers "Maintainer Name")
+(maintainers "Joona Piirainen")
 
 (license LICENSE)
 
-(documentation https://url/to/documentation)
-
 (package
  (name aoc_2022)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml dune)
- (tags
-  (topics "to describe" your project)))
-
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
+ (synopsis "Advent Of Code 2022 solutions")
+ (depends ocaml dune))
