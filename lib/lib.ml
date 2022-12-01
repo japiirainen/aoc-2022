@@ -5,18 +5,9 @@ module type Solver = sig
   val solve : string -> string * string
 end
 
-module Result_syntax = struct
-  let ( let* ) x f = Result.bind ~f x
-  let return = Result.return
-end
-
-module Option_syntax = struct
-  let ( let* ) x f = Option.bind ~f x
-  let return = Option.return
-end
-
-let read_all filepath =
-  try Ok (In_channel.read_all filepath) with _ -> Error "File not found"
+let read_all env filepath =
+  let ( / ) = Eio.Path.( / ) in
+  Eio.Path.load (Eio.Stdenv.cwd env / filepath)
 
 let print_list list to_string =
   list |> List.iter ~f:(Fn.compose print_endline to_string)

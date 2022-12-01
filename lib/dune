@@ -1,6 +1,6 @@
 (library
  (name lib)
  (inline_tests)
- (libraries containers core stdio)
+ (libraries containers core stdio eio_main)
  (preprocess
   (pps ppx_inline_test)))
