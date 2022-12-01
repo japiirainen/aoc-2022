@@ -19,7 +19,7 @@ let runner () =
     exit 1
   | (module Solver) ->
     List.map files ~f:(fun fp ->
-      let* lines = Lib.read_lines fp in  
+      let* lines = Lib.read_all fp in  
       let (part1, part2) = Solver.solve lines in
       return (Printf.sprintf "\nFilepath: %s\nPart 1: %s\nPart 2: %s" fp part1 part2))
     |> Result.all
