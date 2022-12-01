@@ -9,5 +9,5 @@ let read_all env filepath =
   let ( / ) = Eio.Path.( / ) in
   Eio.Path.load (Eio.Stdenv.cwd env / filepath)
 
-let print_list list to_string =
-  list |> List.iter ~f:(Fn.compose print_endline to_string)
+let ( << ) = Fn.compose
+let print_list list to_string = list |> List.iter ~f:(print_endline << to_string)
