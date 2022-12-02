@@ -1,0 +1,63 @@
+name: AOC
+version: 0.0.1
+synopsis: Advent of code solutions for 2022
+description: See README at <https://github.com/japiirainen/aoc-2022#readme>
+maintainer: Joona Piirainen <joona.piirainen@gmail.com>
+github: japiirainen/aoc-2022
+
+ghc-options: -Wall
+
+default-extensions:
+  - LambdaCase 
+  - DeriveFunctor
+  - BlockArguments
+  - TypeOperators
+  - TypeFamilies
+  - DeriveGeneric
+  - OverloadedStrings
+  - TypeApplications
+
+dependencies:
+  - base
+  - mtl
+  - containers
+  - pretty
+  - text
+  - directory
+  - selective
+  - vector
+  - array
+  - linear
+  - safe
+  - unordered-containers
+  - MemoTrie
+  - lens
+  - split
+  - foldl
+
+library:
+  source-dirs: 
+    - lib
+  exposed-modules:
+    - AOC.List.Transformer
+    - AOC.List.Extended
+    - AOC.Parser
+    - AOC.V2
+    - AOC.V3
+    - AOC.V2.Box
+    - AOC.Grid
+    - AOC.Main
+    - AOC.Foldable
+    - AOC.Dijkstra
+    - AOC.Vector.Extra
+    - AOC.Grid.Bounded
+    - AOC.Functor.Fix
+    - AOC.Coord
+    - AOC.Test
+
+executables:
+  01:
+    source-dirs: "src"
+    main: 01.hs
+    dependencies: AOC
+    
