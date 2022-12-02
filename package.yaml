@@ -16,6 +16,7 @@ default-extensions:
   - DeriveGeneric
   - OverloadedStrings
   - TypeApplications
+  - DerivingStrategies
 
 dependencies:
   - base
@@ -59,5 +60,9 @@ executables:
   01:
     source-dirs: "src"
     main: 01.hs
+    dependencies: AOC
+  02:
+    source-dirs: "src"
+    main: 02.hs
     dependencies: AOC
     

@@ -8,5 +8,5 @@ cabal run [DAY] "src/[DAY]" # run a specific day
 ```
 
 ## Other years
-- [2021](https://github.com/japiirainen/aoc-2015/) in Haskell
+- [2021](https://github.com/japiirainen/aoc-2021/) in Haskell
 - [2015](https://github.com/japiirainen/aoc-2015/) in Clojure λ
