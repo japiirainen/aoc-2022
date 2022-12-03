@@ -17,6 +17,7 @@ default-extensions:
   - OverloadedStrings
   - TypeApplications
   - DerivingStrategies
+  - ViewPatterns
 
 dependencies:
   - base
@@ -64,5 +65,9 @@ executables:
   02:
     source-dirs: "src"
     main: 02.hs
+    dependencies: AOC
+  03:
+    source-dirs: "src"
+    main: 03.hs
     dependencies: AOC
     
