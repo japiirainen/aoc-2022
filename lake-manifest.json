@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "packages": [
+    {
+      "git": {
+        "url": "https://github.com/leanprover/std4",
+        "subDir?": null,
+        "rev": "e58f16240eb8fabbe11e86e60b9e882a8fd2fdf7",
+        "name": "std",
+        "inputRev?": null
+      }
+    }
+  ]
+}
