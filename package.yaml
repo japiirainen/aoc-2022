@@ -70,4 +70,8 @@ executables:
     source-dirs: "src"
     main: 03.hs
     dependencies: AOC
+  04:
+    source-dirs: "src"
+    main: 04.hs
+    dependencies: AOC
     

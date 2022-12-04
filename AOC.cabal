@@ -183,3 +183,41 @@ executable 03
     , unordered-containers
     , vector
   default-language: Haskell2010
+
+executable 04
+  main-is: 04.hs
+  other-modules:
+      Paths_AOC
+  hs-source-dirs:
+      src
+  default-extensions:
+      LambdaCase
+      DeriveFunctor
+      BlockArguments
+      TypeOperators
+      TypeFamilies
+      DeriveGeneric
+      OverloadedStrings
+      TypeApplications
+      DerivingStrategies
+      ViewPatterns
+  ghc-options: -Wall
+  build-depends:
+      AOC
+    , MemoTrie
+    , array
+    , base
+    , containers
+    , directory
+    , foldl
+    , lens
+    , linear
+    , mtl
+    , pretty
+    , safe
+    , selective
+    , split
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010

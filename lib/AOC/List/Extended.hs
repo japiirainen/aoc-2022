@@ -1,5 +1,7 @@
 module AOC.List.Extended where
 
+import Data.List (foldl')
+
 select :: [a] -> [(a, [a])]
 select [] = []
 select (x : xs) = (x, xs) : [(y, x : ys) | (y, ys) <- select xs]
@@ -13,3 +15,8 @@ chunks n xs =
 compose :: [a -> a] -> a -> a
 compose = foldr (.) id
 
+countBy :: (Foldable t) => (a -> Bool) -> t a -> Int
+countBy p = foldl' (\n x -> if p x then n + 1 else n) 0
+
+count :: (Foldable t, Eq a) => a -> t a -> Int
+count = countBy . (==)
