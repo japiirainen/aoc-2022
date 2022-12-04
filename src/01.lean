@@ -9,7 +9,6 @@ def sol (toTake : Nat) : List (List Int) → Int :=
 
 def main : IO Unit := do
   let i ← (parseInput ∘ Array.toList) <$> IO.FS.lines "src/01"
-  IO.println (sol 1 i) -- part 1
-  IO.println (sol 3 i) -- part 2
+  IO.println (sol 1 i, sol 3 i)
 
 #eval main
