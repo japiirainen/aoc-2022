@@ -6,12 +6,12 @@ def parseLine (xs : List Char) : Option (Int × Int × Int × Int) :=
   | _ => none
    
 def part₁ (xs : List (Int × Int × Int × Int)) : Int :=
-  xs.countp (λ ((a, b, c, d) : Int × Int × Int × Int) => 0≥(a-c)*(b-d))
+  xs.countp (λ (a, b, c, d) => 0≥(a-c)*(b-d))
 
 def part₂ (xs : List (Int × Int × Int × Int)) : Int :=
-  xs.countp (λ ((a, b, c, d) : Int × Int × Int × Int) => 0≥(b-c)*(a-d))
+  xs.countp (λ (a, b, c, d) => 0≥(b-c)*(a-d))
    
 def sol : IO Unit := do
   let i ← IO.FS.lines "src/04"
   let parsed := Array.toList <$> i.sequenceMap (parseLine ∘ String.toList)
-  _ ← parsed.mapM (λ xs => IO.println (part₁ xs, part₂ xs))
+  _ ← parsed.mapM (λ xs => IO.println (part₁ xs, part₂ xs)) 

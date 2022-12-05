@@ -18,6 +18,9 @@ default-extensions:
   - TypeApplications
   - DerivingStrategies
   - ViewPatterns
+  - GeneralizedNewtypeDeriving
+  - RankNTypes
+  - ScopedTypeVariables
 
 dependencies:
   - base
@@ -73,5 +76,9 @@ executables:
   04:
     source-dirs: "src"
     main: 04.hs
+    dependencies: AOC
+  05:
+    source-dirs: "src"
+    main: 05.hs
     dependencies: AOC
     

@@ -10,6 +10,7 @@ module AOC.Parser (
   many1,
   sepBy,
   sepBy1,
+  space,
   chainl1,
   alpha,
   digit,
@@ -112,6 +113,9 @@ upper = satisfy "upper" Char.isUpper
 
 spaces :: Parser Char ()
 spaces = void $ many $ satisfy "whitespace" isSpace
+
+space :: Parser Char ()
+space = char ' '
 
 horizontalSpaces :: Parser Char ()
 horizontalSpaces = void . many $
