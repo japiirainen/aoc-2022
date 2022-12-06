@@ -38,7 +38,7 @@ library
       AOC.PQ
       Paths_AOC
   hs-source-dirs:
-      lib
+      hslib
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -82,7 +82,7 @@ executable 01
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      src
+      hs
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -127,7 +127,7 @@ executable 02
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      src
+      hs
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -172,7 +172,7 @@ executable 03
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      src
+      hs
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -217,7 +217,7 @@ executable 04
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      src
+      hs
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -262,7 +262,7 @@ executable 05
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      src
+      hs
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -307,7 +307,7 @@ executable 06
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      src
+      hs
   default-extensions:
       LambdaCase
       DeriveFunctor

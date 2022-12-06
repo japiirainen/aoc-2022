@@ -8,7 +8,7 @@ def sol (toTake : Nat) : List (List Int) → Int :=
   (·.sum) ∘ (·.take toTake) ∘ (·.reverse) ∘ (·.sort) ∘ (·.map (·.sum))
 
 def main : IO Unit := do
-  let i ← (parseInput ∘ Array.toList) <$> IO.FS.lines "src/01"
+  let i ← (parseInput ∘ Array.toList) <$> IO.FS.lines "input/01"
   IO.println (sol 1 i, sol 3 i)
 
 #eval main

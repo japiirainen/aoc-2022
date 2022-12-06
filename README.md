@@ -4,7 +4,7 @@ Advent of code 2022 solutions.
 
 ## Usage
 ```sh
-cabal run [DAY] "src/[DAY]" # run a specific day
+cabal run [DAY] "input/[DAY]" # run a specific day
 ```
 
 ## Other years

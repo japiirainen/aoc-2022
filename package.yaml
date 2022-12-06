@@ -56,7 +56,7 @@ dependencies:
 
 library:
   source-dirs: 
-    - lib
+    - hslib
   exposed-modules:
     - AOC.List.Transformer
     - AOC.List.Extended
@@ -76,27 +76,27 @@ library:
 
 executables:
   01:
-    source-dirs: "src"
+    source-dirs: "hs"
     main: 01.hs
     dependencies: AOC
   02:
-    source-dirs: "src"
+    source-dirs: "hs"
     main: 02.hs
     dependencies: AOC
   03:
-    source-dirs: "src"
+    source-dirs: "hs"
     main: 03.hs
     dependencies: AOC
   04:
-    source-dirs: "src"
+    source-dirs: "hs"
     main: 04.hs
     dependencies: AOC
   05:
-    source-dirs: "src"
+    source-dirs: "hs"
     main: 05.hs
     dependencies: AOC
   06:
-    source-dirs: "src"
+    source-dirs: "hs"
     main: 06.hs
     dependencies: AOC
     
