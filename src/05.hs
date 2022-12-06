@@ -8,35 +8,35 @@ import Data.Maybe (catMaybes)
 import qualified AOC.Parser as P
 import qualified Data.Map as Map
 
-newtype Stacks stack item = Stacks {unStacks :: Map.Map stack [item]}
+newtype Stacks stack item = Stacks {unStacks ∷ Map.Map stack [item]}
 
 data S stack item = S
-  { sMoves :: [(Int, stack, stack)]
-  , sStacks :: Stacks stack item
+  { sMoves ∷ [(Int, stack, stack)]
+  , sStacks ∷ Stacks stack item
   }
 
-ap :: forall stack item t. (Ord stack, Foldable t) => t (Int, stack, stack) -> Stacks stack item -> Stacks stack item
+ap ∷ ∀ stack item t. (Ord stack, Foldable t) ⇒ t (Int, stack, stack) → Stacks stack item → Stacks stack item
 ap m0 s0 = foldl' move s0 m0
   where
     move (Stacks s) (n, from, to) =
       Stacks $
         case Map.lookup from s of
-          Nothing -> s
-          Just stack -> let (t, r) = splitAt n stack in Map.insertWith (<>) to t $ Map.insert from r s
+          Nothing → s
+          Just stack → let (t, r) = splitAt n stack in Map.insertWith (<>) to t $ Map.insert from r s
 
-main :: IO ()
-main = pureMain $ \raw -> do
-  input <- P.runParser parseInput raw
+main ∷ IO ()
+main = pureMain $ \raw → do
+  input ← P.runParser parseInput raw
   let moves = do
-        (n, from, to) <- sMoves input
+        (n, from, to) ← input.sMoves
         replicate n (1, from, to)
-      top = map (head . snd) . Map.toAscList . unStacks
+      top = map (head . snd) . Map.toAscList . (.unStacks)
   pure
-    ( pure (top $ ap moves (sStacks input))
-    , pure (top $ ap (sMoves input) (sStacks input))
+    ( pure (top $ ap moves input.sStacks)
+    , pure (top $ ap input.sMoves input.sStacks)
     )
 
-parseInput :: P.Parser Char (S Int Char)
+parseInput ∷ P.Parser Char (S Int Char)
 parseInput = makeS <$> parseRows <*> parseLabels <* P.newline <*> parseMoves
   where
     makeS rs ls moves = S moves $ Stacks $ Map.fromList $ zip ls (map catMaybes $ transpose rs)

@@ -5,7 +5,16 @@ description: See README at <https://github.com/japiirainen/aoc-2022#readme>
 maintainer: Joona Piirainen <joona.piirainen@gmail.com>
 github: japiirainen/aoc-2022
 
-ghc-options: -Wall
+ghc-options: 
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-home-modules
+  - -Wpartial-fields
+  - -Wredundant-constraints
+  - -Wno-deprecations
 
 default-extensions:
   - LambdaCase 
@@ -21,6 +30,11 @@ default-extensions:
   - GeneralizedNewtypeDeriving
   - RankNTypes
   - ScopedTypeVariables
+  - UnicodeSyntax
+  # records
+  - RecordWildCards
+  - OverloadedRecordDot
+  - NoFieldSelectors
 
 dependencies:
   - base

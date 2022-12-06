@@ -53,7 +53,11 @@ library
       GeneralizedNewtypeDeriving
       RankNTypes
       ScopedTypeVariables
-  ghc-options: -Wall
+      UnicodeSyntax
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
   build-depends:
       MemoTrie
     , array
@@ -93,7 +97,11 @@ executable 01
       GeneralizedNewtypeDeriving
       RankNTypes
       ScopedTypeVariables
-  ghc-options: -Wall
+      UnicodeSyntax
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
   build-depends:
       AOC
     , MemoTrie
@@ -134,7 +142,11 @@ executable 02
       GeneralizedNewtypeDeriving
       RankNTypes
       ScopedTypeVariables
-  ghc-options: -Wall
+      UnicodeSyntax
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
   build-depends:
       AOC
     , MemoTrie
@@ -175,7 +187,11 @@ executable 03
       GeneralizedNewtypeDeriving
       RankNTypes
       ScopedTypeVariables
-  ghc-options: -Wall
+      UnicodeSyntax
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
   build-depends:
       AOC
     , MemoTrie
@@ -216,7 +232,11 @@ executable 04
       GeneralizedNewtypeDeriving
       RankNTypes
       ScopedTypeVariables
-  ghc-options: -Wall
+      UnicodeSyntax
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
   build-depends:
       AOC
     , MemoTrie
@@ -257,7 +277,11 @@ executable 05
       GeneralizedNewtypeDeriving
       RankNTypes
       ScopedTypeVariables
-  ghc-options: -Wall
+      UnicodeSyntax
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
   build-depends:
       AOC
     , MemoTrie
@@ -298,7 +322,11 @@ executable 06
       GeneralizedNewtypeDeriving
       RankNTypes
       ScopedTypeVariables
-  ghc-options: -Wall
+      UnicodeSyntax
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
   build-depends:
       AOC
     , MemoTrie
