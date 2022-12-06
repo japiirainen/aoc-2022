@@ -1,6 +1,6 @@
 module AOC.List.Extended where
 
-import Data.List (foldl')
+import Data.List (foldl', tails)
 
 select :: [a] -> [(a, [a])]
 select [] = []
@@ -20,3 +20,6 @@ countBy p = foldl' (\n x -> if p x then n + 1 else n) 0
 
 count :: (Foldable t, Eq a) => a -> t a -> Int
 count = countBy . (==)
+
+windows' :: [a] -> Int -> [[a]]
+windows' xs n = concatMap (\x -> [take n x | length (take n x) == n]) (tails xs)
