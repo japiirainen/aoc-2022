@@ -10,7 +10,7 @@ import qualified Data.Map as M
 
 main ∷ IO ()
 main = simpleMain $ \input →
-  let fs = bottomUp (\case File s → Sum s; Dir → 0) $ fromZipper (simulate input)
+  let fs = totalSizes (\case File s → Sum s; Dir → 0) $ fromZipper (simulate input)
       dirs = map snd . filter ((== Dir) . fst) $ toList fs
       used = getSum . snd $ value fs
       neededSpace = 30_000_000 - (70_000_000 - used)
@@ -33,10 +33,10 @@ simulateStep _ command = error ("invalid command" <> unlines command)
 simulate ∷ String → FsZipper String FsNode
 simulate = foldl' (\z line → simulateStep z (words line)) (toZipper (singleton Dir)) . lines
 
-bottomUp ∷ ∀ k v m. (Monoid m, Ord k) ⇒ (v → m) → Fs k v → Fs k (v, m)
-bottomUp f (Fs v kids) = Fs (v, total) kids'
+totalSizes ∷ ∀ k v m. (Monoid m, Ord k) ⇒ (v → m) → Fs k v → Fs k (v, m)
+totalSizes f (Fs v kids) = Fs (v, total) kids'
   where
-    kids' = bottomUp f <$> kids
+    kids' = totalSizes f <$> kids
     total = f v <> mconcat (map (\(_, Fs (_, x) _) → x) (M.toList kids'))
 
 data Fs k v = Fs v (M.Map k (Fs k v))
