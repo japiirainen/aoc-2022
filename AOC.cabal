@@ -46,6 +46,8 @@ library
       TypeOperators
       TypeFamilies
       DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
       OverloadedStrings
       TypeApplications
       DerivingStrategies
@@ -90,6 +92,8 @@ executable 01
       TypeOperators
       TypeFamilies
       DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
       OverloadedStrings
       TypeApplications
       DerivingStrategies
@@ -135,6 +139,8 @@ executable 02
       TypeOperators
       TypeFamilies
       DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
       OverloadedStrings
       TypeApplications
       DerivingStrategies
@@ -180,6 +186,8 @@ executable 03
       TypeOperators
       TypeFamilies
       DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
       OverloadedStrings
       TypeApplications
       DerivingStrategies
@@ -225,6 +233,8 @@ executable 04
       TypeOperators
       TypeFamilies
       DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
       OverloadedStrings
       TypeApplications
       DerivingStrategies
@@ -270,6 +280,8 @@ executable 05
       TypeOperators
       TypeFamilies
       DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
       OverloadedStrings
       TypeApplications
       DerivingStrategies
@@ -315,6 +327,55 @@ executable 06
       TypeOperators
       TypeFamilies
       DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
+      OverloadedStrings
+      TypeApplications
+      DerivingStrategies
+      ViewPatterns
+      GeneralizedNewtypeDeriving
+      RankNTypes
+      ScopedTypeVariables
+      UnicodeSyntax
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
+  build-depends:
+      AOC
+    , MemoTrie
+    , array
+    , base
+    , containers
+    , directory
+    , foldl
+    , lens
+    , linear
+    , mtl
+    , pretty
+    , safe
+    , selective
+    , split
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable 07
+  main-is: 07.hs
+  other-modules:
+      Paths_AOC
+  hs-source-dirs:
+      hs
+  default-extensions:
+      LambdaCase
+      DeriveFunctor
+      BlockArguments
+      TypeOperators
+      TypeFamilies
+      DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
       OverloadedStrings
       TypeApplications
       DerivingStrategies
