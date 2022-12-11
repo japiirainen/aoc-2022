@@ -17,17 +17,17 @@ main = pureMain $ \input → do
       magic = foldl1 lcm (map (.divisor) monkeys)
   pure (pure (solve (`div` 3) 20), pure (solve (`mod` magic) 10_000))
 
-data Monkey = Monkey
-  { mId ∷ Int
-  , items ∷ [Int]
-  , fn ∷ Int → Int
-  , divisor ∷ Int
-  , onTrue ∷ Int
-  , onFalse ∷ Int
-  , throws ∷ Int
+data Monkey a = Monkey
+  { mId ∷ a
+  , items ∷ [a]
+  , fn ∷ a → a
+  , divisor ∷ a
+  , onTrue ∷ a
+  , onFalse ∷ a
+  , throws ∷ a
   }
 
-parseMonkey ∷ P.Parser Char Monkey
+parseMonkey ∷ P.Parser Char (Monkey Int)
 parseMonkey = mkMonkey <$> pId <*> pItems <*> pOp <*> pDivisor <*> pIfTrue <*> pIfFalse
   where
     mkMonkey i items (op, arg) divisor ifTrue ifFalse = Monkey i items (evalOp op arg) divisor ifTrue ifFalse 0
@@ -46,12 +46,10 @@ evalOp '*' Nothing y = y * y
 evalOp '+' Nothing y = y + y
 evalOp _ _ _ = error "Invalid operation"
 
-type WorryLevelFn = Int → Int
-
-execRound ∷ WorryLevelFn → M.Map Int Monkey → M.Map Int Monkey
+execRound ∷ (Int → Int) → M.Map Int (Monkey Int) → M.Map Int (Monkey Int)
 execRound modulus monkeys = foldl' (execMonkey modulus) monkeys (M.keys monkeys)
 
-execMonkey ∷ WorryLevelFn → M.Map Int Monkey → Int → M.Map Int Monkey
+execMonkey ∷ (Int → Int) → M.Map Int (Monkey Int) → Int → M.Map Int (Monkey Int)
 execMonkey wrf monkeys i = case (monkeys M.! i).items of
   [] → monkeys
   (x : xs) → execMonkey wrf monkeys' i
