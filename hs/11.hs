@@ -10,11 +10,11 @@ import qualified Data.Map as M
 main ∷ IO ()
 main = pureMain $ \input → do
   monkeys ← P.runParser (parseMonkey `P.sepBy` (P.newline <* P.newline)) input
-  let m0 = M.fromList [(m.mId, m) | m ← monkeys]
-  let solve modulus rounds =
+  let m0 = M.fromList $ (\m → (m.mId, m)) <$> monkeys
+      solve modulus rounds =
         product . take 2 . reverse . sort $
           M.elems ((.throws) <$> runTimes rounds (execRound modulus) m0)
-  let magic = foldl1 lcm (map (.divisor) monkeys)
+      magic = foldl1 lcm (map (.divisor) monkeys)
   pure (pure (solve (`div` 3) 20), pure (solve (`mod` magic) 10_000))
 
 data Monkey = Monkey
