@@ -121,3 +121,7 @@ executables:
     source-dirs: "hs"
     main: 11.hs
     dependencies: AOC
+  12:
+    source-dirs: "hs"
+    main: 12.hs
+    dependencies: AOC
