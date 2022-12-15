@@ -33,6 +33,8 @@ default-extensions:
   - RankNTypes
   - ScopedTypeVariables
   - UnicodeSyntax
+  - DataKinds
+  - GADTs
   # records
   - RecordWildCards
   - OverloadedRecordDot
@@ -62,6 +64,8 @@ library:
   exposed-modules:
     - AOC.List.Transformer
     - AOC.List.Extended
+    - AOC.Box
+    - AOC.Nat
     - AOC.Parser
     - AOC.V2
     - AOC.V3
@@ -128,4 +132,8 @@ executables:
   13:
     source-dirs: "hs"
     main: 13.hs
+    dependencies: AOC
+  15:
+    source-dirs: "hs"
+    main: 15.hs
     dependencies: AOC

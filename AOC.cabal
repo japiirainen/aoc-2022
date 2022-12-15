@@ -21,6 +21,8 @@ library
   exposed-modules:
       AOC.List.Transformer
       AOC.List.Extended
+      AOC.Box
+      AOC.Nat
       AOC.Parser
       AOC.V2
       AOC.V3
@@ -56,6 +58,8 @@ library
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -102,6 +106,8 @@ executable 01
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -149,6 +155,8 @@ executable 02
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -196,6 +204,8 @@ executable 03
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -243,6 +253,8 @@ executable 04
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -290,6 +302,8 @@ executable 05
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -337,6 +351,8 @@ executable 06
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -384,6 +400,8 @@ executable 07
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -431,6 +449,8 @@ executable 08
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -478,6 +498,8 @@ executable 09
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -525,6 +547,8 @@ executable 10
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -572,6 +596,8 @@ executable 11
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -619,6 +645,8 @@ executable 12
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
@@ -666,6 +694,57 @@ executable 13
       RankNTypes
       ScopedTypeVariables
       UnicodeSyntax
+      DataKinds
+      GADTs
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
+  build-depends:
+      AOC
+    , MemoTrie
+    , array
+    , base
+    , containers
+    , directory
+    , foldl
+    , lens
+    , linear
+    , mtl
+    , pretty
+    , safe
+    , selective
+    , split
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable 15
+  main-is: 15.hs
+  other-modules:
+      Paths_AOC
+  hs-source-dirs:
+      hs
+  default-extensions:
+      LambdaCase
+      DeriveFunctor
+      BlockArguments
+      TypeOperators
+      TypeFamilies
+      DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
+      OverloadedStrings
+      TypeApplications
+      DerivingStrategies
+      ViewPatterns
+      GeneralizedNewtypeDeriving
+      RankNTypes
+      ScopedTypeVariables
+      UnicodeSyntax
+      DataKinds
+      GADTs
       RecordWildCards
       OverloadedRecordDot
       NoFieldSelectors
