@@ -15,7 +15,7 @@ minimaBy f = F.foldl' step []
       LT → [x]
       GT → y : ys
 
-maximaBy ∷ (Ord a, Foldable t) ⇒ (a → a → Ordering) → t a → [a]
+maximaBy ∷ (Foldable t) ⇒ (a → a → Ordering) → t a → [a]
 maximaBy f = minimaBy (\x y → down (f x y))
   where
     down LT = GT
