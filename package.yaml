@@ -19,6 +19,7 @@ ghc-options:
 default-extensions:
   - LambdaCase 
   - DeriveFunctor
+  - BangPatterns
   - BlockArguments
   - TypeOperators
   - TypeFamilies

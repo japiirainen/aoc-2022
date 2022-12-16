@@ -44,6 +44,7 @@ library
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -92,6 +93,7 @@ executable 01
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -141,6 +143,7 @@ executable 02
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -190,6 +193,7 @@ executable 03
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -239,6 +243,7 @@ executable 04
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -288,6 +293,7 @@ executable 05
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -337,6 +343,7 @@ executable 06
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -386,6 +393,7 @@ executable 07
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -435,6 +443,7 @@ executable 08
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -484,6 +493,7 @@ executable 09
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -533,6 +543,7 @@ executable 10
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -582,6 +593,7 @@ executable 11
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -631,6 +643,7 @@ executable 12
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -680,6 +693,7 @@ executable 13
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -729,6 +743,7 @@ executable 14
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -778,6 +793,7 @@ executable 15
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
@@ -827,6 +843,7 @@ executable 16
   default-extensions:
       LambdaCase
       DeriveFunctor
+      BangPatterns
       BlockArguments
       TypeOperators
       TypeFamilies
