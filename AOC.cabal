@@ -79,6 +79,7 @@ library
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -129,6 +130,7 @@ executable 01
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -179,6 +181,7 @@ executable 02
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -229,6 +232,7 @@ executable 03
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -279,6 +283,7 @@ executable 04
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -329,6 +334,7 @@ executable 05
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -379,6 +385,7 @@ executable 06
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -429,6 +436,7 @@ executable 07
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -479,6 +487,7 @@ executable 08
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -529,6 +538,7 @@ executable 09
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -579,6 +589,7 @@ executable 10
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -629,6 +640,7 @@ executable 11
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -679,6 +691,7 @@ executable 12
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -729,6 +742,7 @@ executable 13
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -779,6 +793,7 @@ executable 14
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -829,6 +844,7 @@ executable 15
     , safe
     , selective
     , split
+    , streams
     , text
     , unordered-containers
     , vector
@@ -879,6 +895,58 @@ executable 16
     , safe
     , selective
     , split
+    , streams
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable 17
+  main-is: 17.hs
+  other-modules:
+      Paths_AOC
+  hs-source-dirs:
+      hs
+  default-extensions:
+      LambdaCase
+      DeriveFunctor
+      BangPatterns
+      BlockArguments
+      TypeOperators
+      TypeFamilies
+      DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
+      OverloadedStrings
+      TypeApplications
+      DerivingStrategies
+      ViewPatterns
+      GeneralizedNewtypeDeriving
+      RankNTypes
+      ScopedTypeVariables
+      UnicodeSyntax
+      DataKinds
+      GADTs
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
+  build-depends:
+      AOC
+    , MemoTrie
+    , array
+    , base
+    , containers
+    , directory
+    , foldl
+    , lens
+    , linear
+    , mtl
+    , pretty
+    , safe
+    , selective
+    , split
+    , streams
     , text
     , unordered-containers
     , vector

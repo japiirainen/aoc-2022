@@ -58,6 +58,7 @@ dependencies:
   - lens
   - split
   - foldl
+  - streams
 
 library:
   source-dirs: 
@@ -145,4 +146,8 @@ executables:
   16:
     source-dirs: "hs"
     main: 16.hs
+    dependencies: AOC
+  17:
+    source-dirs: "hs"
+    main: 17.hs
     dependencies: AOC
