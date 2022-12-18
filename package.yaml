@@ -81,6 +81,8 @@ library:
     - AOC.Functor.Fix
     - AOC.Coord
     - AOC.Test
+    - AOC.Search
+    - AOC.Queue
 
 executables:
   01:
@@ -150,4 +152,8 @@ executables:
   17:
     source-dirs: "hs"
     main: 17.hs
+    dependencies: AOC
+  18:
+    source-dirs: "hs"
+    main: 18.hs
     dependencies: AOC

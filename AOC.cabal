@@ -36,6 +36,8 @@ library
       AOC.Functor.Fix
       AOC.Coord
       AOC.Test
+      AOC.Search
+      AOC.Queue
   other-modules:
       AOC.PQ
       Paths_AOC
@@ -903,6 +905,57 @@ executable 16
 
 executable 17
   main-is: 17.hs
+  other-modules:
+      Paths_AOC
+  hs-source-dirs:
+      hs
+  default-extensions:
+      LambdaCase
+      DeriveFunctor
+      BangPatterns
+      BlockArguments
+      TypeOperators
+      TypeFamilies
+      DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
+      OverloadedStrings
+      TypeApplications
+      DerivingStrategies
+      ViewPatterns
+      GeneralizedNewtypeDeriving
+      RankNTypes
+      ScopedTypeVariables
+      UnicodeSyntax
+      DataKinds
+      GADTs
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
+  build-depends:
+      AOC
+    , MemoTrie
+    , array
+    , base
+    , containers
+    , directory
+    , foldl
+    , lens
+    , linear
+    , mtl
+    , pretty
+    , safe
+    , selective
+    , split
+    , streams
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable 18
+  main-is: 18.hs
   other-modules:
       Paths_AOC
   hs-source-dirs:
