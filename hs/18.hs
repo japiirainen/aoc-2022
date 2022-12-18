@@ -10,7 +10,7 @@ import qualified AOC.Parser as P
 import qualified AOC.V3 as V3
 import qualified Data.Set as Set
 
-uncurry3 ∷ (a → b → c → d) → (a, b, c) → d
+uncurry3 ∷ forall a b c d. (a → b → c → d) → (a, b, c) → d
 uncurry3 f (a, b, c) = f a b c
 
 parseCubes ∷ P.Parser Char (Set.Set (V3 Int))
