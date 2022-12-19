@@ -59,6 +59,7 @@ dependencies:
   - split
   - foldl
   - streams
+  - async
 
 library:
   source-dirs: 
@@ -156,4 +157,8 @@ executables:
   18:
     source-dirs: "hs"
     main: 18.hs
+    dependencies: AOC
+  19:
+    source-dirs: "hs"
+    main: 19.hs
     dependencies: AOC
