@@ -80,6 +80,7 @@ library
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -132,6 +133,7 @@ executable 01
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -184,6 +186,7 @@ executable 02
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -236,6 +239,7 @@ executable 03
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -288,6 +292,7 @@ executable 04
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -340,6 +345,7 @@ executable 05
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -392,6 +398,7 @@ executable 06
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -444,6 +451,7 @@ executable 07
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -496,6 +504,7 @@ executable 08
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -548,6 +557,7 @@ executable 09
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -600,6 +610,7 @@ executable 10
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -652,6 +663,7 @@ executable 11
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -704,6 +716,7 @@ executable 12
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -756,6 +769,7 @@ executable 13
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -808,6 +822,7 @@ executable 14
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -860,6 +875,7 @@ executable 15
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -912,6 +928,7 @@ executable 16
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -964,6 +981,7 @@ executable 17
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -1016,6 +1034,7 @@ executable 18
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -1068,6 +1087,7 @@ executable 19
     , mtl
     , pretty
     , safe
+    , sbv
     , selective
     , split
     , streams
@@ -1120,6 +1140,60 @@ executable 20
     , mtl
     , pretty
     , safe
+    , sbv
+    , selective
+    , split
+    , streams
+    , text
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable 21
+  main-is: 21.hs
+  other-modules:
+      Paths_AOC
+  hs-source-dirs:
+      hs
+  default-extensions:
+      LambdaCase
+      DeriveFunctor
+      BangPatterns
+      BlockArguments
+      TypeOperators
+      TypeFamilies
+      DeriveGeneric
+      DeriveFoldable
+      NumericUnderscores
+      OverloadedStrings
+      TypeApplications
+      DerivingStrategies
+      ViewPatterns
+      GeneralizedNewtypeDeriving
+      RankNTypes
+      ScopedTypeVariables
+      UnicodeSyntax
+      DataKinds
+      GADTs
+      RecordWildCards
+      OverloadedRecordDot
+      NoFieldSelectors
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-deprecations
+  build-depends:
+      AOC
+    , MemoTrie
+    , array
+    , async
+    , base
+    , containers
+    , directory
+    , foldl
+    , lens
+    , linear
+    , mtl
+    , pretty
+    , safe
+    , sbv
     , selective
     , split
     , streams
