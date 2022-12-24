@@ -175,3 +175,7 @@ executables:
     source-dirs: "hs"
     main: 23.hs
     dependencies: AOC
+  24:
+    source-dirs: "hs"
+    main: 24.hs
+    dependencies: AOC
