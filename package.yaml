@@ -64,7 +64,7 @@ dependencies:
 
 library:
   source-dirs: 
-    - hslib
+    - lib
   exposed-modules:
     - AOC.List.Transformer
     - AOC.List.Extended
@@ -88,98 +88,98 @@ library:
 
 executables:
   01:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 01.hs
     dependencies: AOC
   02:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 02.hs
     dependencies: AOC
   03:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 03.hs
     dependencies: AOC
   04:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 04.hs
     dependencies: AOC
   05:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 05.hs
     dependencies: AOC
   06:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 06.hs
     dependencies: AOC
   07:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 07.hs
     dependencies: AOC
   08:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 08.hs
     dependencies: AOC
   09:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 09.hs
     dependencies: AOC
   10:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 10.hs
     dependencies: AOC
   11:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 11.hs
     dependencies: AOC
   12:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 12.hs
     dependencies: AOC
   13:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 13.hs
     dependencies: AOC
   14:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 14.hs
     dependencies: AOC
   15:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 15.hs
     dependencies: AOC
   16:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 16.hs
     dependencies: AOC
   17:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 17.hs
     dependencies: AOC
   18:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 18.hs
     dependencies: AOC
   19:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 19.hs
     dependencies: AOC
   20:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 20.hs
     dependencies: AOC
   21:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 21.hs
     dependencies: AOC
   23:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 23.hs
     dependencies: AOC
   24:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 24.hs
     dependencies: AOC
   25:
-    source-dirs: "hs"
+    source-dirs: "src"
     main: 25.hs
     dependencies: AOC

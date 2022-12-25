@@ -42,7 +42,7 @@ library
       AOC.PQ
       Paths_AOC
   hs-source-dirs:
-      hslib
+      lib
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -94,7 +94,7 @@ executable 01
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -147,7 +147,7 @@ executable 02
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -200,7 +200,7 @@ executable 03
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -253,7 +253,7 @@ executable 04
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -306,7 +306,7 @@ executable 05
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -359,7 +359,7 @@ executable 06
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -412,7 +412,7 @@ executable 07
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -465,7 +465,7 @@ executable 08
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -518,7 +518,7 @@ executable 09
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -571,7 +571,7 @@ executable 10
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -624,7 +624,7 @@ executable 11
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -677,7 +677,7 @@ executable 12
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -730,7 +730,7 @@ executable 13
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -783,7 +783,7 @@ executable 14
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -836,7 +836,7 @@ executable 15
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -889,7 +889,7 @@ executable 16
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -942,7 +942,7 @@ executable 17
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -995,7 +995,7 @@ executable 18
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -1048,7 +1048,7 @@ executable 19
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -1101,7 +1101,7 @@ executable 20
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -1154,7 +1154,7 @@ executable 21
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -1207,7 +1207,7 @@ executable 23
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -1260,7 +1260,7 @@ executable 24
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
@@ -1313,7 +1313,7 @@ executable 25
   other-modules:
       Paths_AOC
   hs-source-dirs:
-      hs
+      src
   default-extensions:
       LambdaCase
       DeriveFunctor
