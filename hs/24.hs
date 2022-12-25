@@ -52,5 +52,4 @@ main = simpleMain $ \raw →
       p0 = solve 0 (Set.singleton (C 0 1)) target
       p1 = solve p0 (Set.singleton target) (C 0 1)
       p2 = solve p1 (Set.singleton (C 0 1)) target
-
    in (p0, p2)
